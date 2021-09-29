@@ -1,0 +1,50 @@
+<!--
+TFW Deals template for a WordPress post, not a full html page, a post with embedded HTML
+
+-->
+
+
+If you are looking to sign up for {{mydata['advertiser_name']}} you'll need a phone. With {{mydata['advertiser_name']}} you'll have the choice to Bring Your Own Phone (BYOP) or buy one directly from {{mydata['advertiser_name']}}.
+
+On this page, I'll share the latest {{mydata['advertiser_name']}} deals and promotions for {{mydata['']}}. With some of the deals here you could save $100 or more on an Apple iPhone, Samsung Galaxy, or other Android phone.
+{% if mydata['coupon_code'] and not 'no coupon' in mydata['coupon_code']%}
+<h3>Current Promo Codes</h3>
+<p>This month {{mydata['advertiser_name']}} is offering a phone and plan discount bundle. Buy a phone and a plan together and try promo code {{mydata['coupon_code']}} to save {{mydata['discount']}} off your order, up to a maximum of $100. This offer expires {{mydata['enddate']}}</p>
+{% for k in mydata['coupon_links'] %}
+<p>{{k['link-code-html']}}</p>
+{% endfor %}
+{% else %}
+<h3>Current Promo Codes</h3>
+<p>At this time there are no {{mydata['advertiser_name']}} promo codes available. This page is updated daily to make sure the latest promo codes are available to you.</p>
+{% endif %}
+
+
+{% for key in mydata['phone_brands'] %}
+{% if mydata['ordered_brand_links'][key] %}
+<h3>{{key}} Deals and Promotions</h3>
+{% if mydata['coupon_code'] %}
+<p>Make sure to try promo code {{mydata['coupon_code']}} im the cart to save {{mydata['discount']}} off your order, up to a maximum of $100.</p>
+{%+ endif %}
+{%+ endif %}
+{% for k in mydata['ordered_brand_links'][key] %}
+<p>{{k['link-code-html']}}</p>
+{%+ endfor %}
+{%+ endfor %}
+<h3>Other Tracfone Brand Deals and Promo codes</h3>
+<p>Did you know that {{mydata['advertiser_name']}} is just one of a number of brands owned by Tracfone wireless? Check out these other deals and promotions too</p>
+{% if not 'Straight' in mydata['advertiser_name'] %}
+<p>For the latest Straight Talk deals and promotions, see <a href="https://smartphonematters.com/straight-talk-latest-deals-and-promo-codes/">Straight Talk Latest Deals and Promo Codes</a></p>
+{% endif %}
+{% if mydata['advertiser-name'] %}
+{% endif %}
+{% if not 'Tracfone' in mydata['advertiser_name'] %}
+<p>For the latest Tracfone deals and promotions, see <a href="https://smartphonematters.com/tracfone-latest-deals-and-promo-codes/">Tracfone Latest Deals and Promo Codes</a></p>
+{% endif %}
+{% if not 'Simple' in mydata['advertiser_name'] %}
+<p>For the latest Simple Mobile deals and promotions, see <a href="https://smartphonematters.com/simple-mobile-latest-deals-and-promo-codes/">Simple Mobile Latest Deals and Promo Codes</a></p>
+{% endif %}
+{% if not 'Net' in mydata['advertiser_name'] %}
+<p>For the latest Net10 Wireless deals and promotions, see <a href="https://smartphonematters.com/net-10-latest-deals-and-promo-codes/">Net 10 Latest Deals and Promo Codes</a></p>
+{% endif %}
+<div class="info-box notice">This page contains affiliate links. When you use these links you\'ll help support smartphonematters.com at no additional cost to you</div></p>
+

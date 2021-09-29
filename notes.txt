@@ -2,3 +2,41 @@
 copy github repository
  1108   git clone git@github.com:ramosxcom/LaunchAgents
 
+ 1082  git status
+ 1098  ssh git@github.com:ramosxcom/LaunchAgents.git
+ 1108   git clone git@github.com:ramosxcom/LaunchAgents
+ 1115  history  git clone git@github.com:ramosxcom/LaunchAgents
+ 1119  git status 
+ 1120  git add notes.txt
+ 1121  git commit - "add notes file to repo"
+ 1122  git commit -m "add notes file to repo"
+ 1142  git status
+ 1143  git push -u origin main
+ 1144  git push -u origin main
+ 1148  git status
+ 1153  git branch --unset-upstream"\n
+ 1154  git branch --unset-upstream
+ 1155  git push -u origin main
+ 1156  git branch -M main
+ 1157  git push -u origin main
+
+
+
+# copy current code from ~/dev/tfwdeals
+#add it to a repository
+# check that it runs
+# port the code to work on python 3.9
+unschedule the existing agent.
+
+porting code from 2.7 to 3.9 conda base already installed.
+replaced print "" statements with print ("")
+replaces .has_key(key) calls with key in dict
+replaced iteritems() with items()
+commented out a bunch of .encode() decode() calls
+* install jinja2 on conda base
+
+How to add a jinja 2 to conda 3.9 base?
+conda install jinja2
+had to install the package inside pycharm too ()
+Pycharm > Preferences > Project > Project Interpreter
+

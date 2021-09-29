@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ramosx.dealbarker</string>
+    <key>ProgramArguments</key>
+    <array>
+		<string>/usr/bin/python3</string>
+	<string>/Users/ramos/Library/LaunchAgents/com.ramosx.dealbarker/afpages.py</string>
+    </array>
+	<key>EnvironmentVariables</key>
+	    <dict>
+	        <key>PYTHONPATH</key>
+	        <string>/Users/ramos/dev/lib/python/site-packages/cjapi:/Users/ramos/dev/lib/python/site-packages/wpapi</string>
+	    </dict>
+    <key>StandardOutPath</key>
+	 <string>/Users/ramos/Library/LaunchAgents/com.ramosx.dealbarker/dealbarkery.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/ramos/Library/LaunchAgents/com.ramosx.dealbarker/dealbarkerz.log</string>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Minute</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+    </dict>
+</dict>
+</plist>
+

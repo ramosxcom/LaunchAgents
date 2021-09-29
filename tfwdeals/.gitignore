@@ -1,0 +1,5 @@
+*.html
+*.html*
+!tfw_template.html
+*.pyc
+*.py.back
