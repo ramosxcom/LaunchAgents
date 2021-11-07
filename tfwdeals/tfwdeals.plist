@@ -6,13 +6,13 @@
     <string>com.ramosx.tfwdealsapp</string>
     <key>ProgramArguments</key>
     <array>
-		<string>/usr/bin/python2</string>
-	<string>/Users/ramos/dev/tfwdeals/tfwdealsapp.py</string>
+		<string>/usr/bin/python3</string>
+	<string>/Users/ramos/LaunchAgents/tfwdeals/tfwdealsapp.py</string>
     </array>
     <key>StandardOutPath</key>
-	 <string>//Users/ramos/dev/tfwdeals/tfwdealsapp.log</string>
+	 <string>/Users/ramos/LaunchAgents/tfwdeals/tfwdealsapp.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/ramos/dev/tfwdeals/tfwdealsapp.log</string>
+    <string>//Users/ramos/LaunchAgents/tfwdeals/tfwdealsapp.log</string>
     <key>StartCalendarInterval</key>
     <dict>
         <key>Minute</key>
